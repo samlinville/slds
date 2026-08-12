@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mode-toggle",
+  "dependencies": [
+    "lucide-react@^1.31.0"
+  ],
+  "registryDependencies": [
+    "https://samlinville.github.io/slds/r/button.json",
+    "https://samlinville.github.io/slds/r/theme-provider.json"
+  ],
+  "files": [
+    {
+      "path": "src/components/mode-toggle.tsx",
+      "content": "import { MoonIcon, SunIcon } from \"lucide-react\"\n\nimport { useTheme } from \"@/components/theme-provider\"\nimport { Button } from \"@/components/ui/button\"\n\nexport function ModeToggle() {\n  const { theme, setTheme } = useTheme()\n  const isDark =\n    theme === \"dark\" ||\n    (theme === \"system\" &&\n      window.matchMedia(\"(prefers-color-scheme: dark)\").matches)\n  const nextTheme = isDark ? \"light\" : \"dark\"\n\n  return (\n    <Button\n      aria-label={`Switch to ${nextTheme} mode`}\n      onClick={() => setTheme(nextTheme)}\n      size=\"icon\"\n      title={`Switch to ${nextTheme} mode`}\n      variant=\"outline\"\n    >\n      {isDark ? (\n        <MoonIcon aria-hidden=\"true\" />\n      ) : (\n        <SunIcon aria-hidden=\"true\" />\n      )}\n    </Button>\n  )\n}\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}
