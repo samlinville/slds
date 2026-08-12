@@ -3,8 +3,7 @@
 import { existsSync, readFileSync } from "node:fs"
 import { resolve } from "node:path"
 
-import { cleanup, render, screen } from "@testing-library/react"
-import userEvent from "@testing-library/user-event"
+import { cleanup, fireEvent, render, screen } from "@testing-library/react"
 import { afterEach, beforeEach, describe, expect, it } from "vitest"
 
 import App from "@/App"
@@ -65,17 +64,16 @@ describe("shadcn Mira kitchen sink", () => {
     )
   })
 
-  it("toggles directly between light and dark themes", async () => {
-    const user = userEvent.setup()
+  it("toggles directly between light and dark themes", () => {
     renderApp()
 
-    await user.click(
+    fireEvent.click(
       screen.getByRole("button", { name: "Switch to dark mode" })
     )
     expect(document.documentElement).toHaveClass("dark")
     expect(localStorage.getItem("theme")).toBe("dark")
 
-    await user.click(
+    fireEvent.click(
       screen.getByRole("button", { name: "Switch to light mode" })
     )
     expect(document.documentElement).toHaveClass("light")
@@ -85,12 +83,11 @@ describe("shadcn Mira kitchen sink", () => {
     ).not.toBeInTheDocument()
   })
 
-  it("supports the demo's selectable scene controls", async () => {
-    const user = userEvent.setup()
+  it("supports the demo's selectable scene controls", () => {
     renderApp()
 
     const dining = screen.getByRole("button", { name: "Dining" })
-    await user.click(dining)
+    fireEvent.click(dining)
 
     expect(dining).toHaveAttribute("aria-pressed", "true")
   })
