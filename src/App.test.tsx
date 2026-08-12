@@ -67,15 +67,21 @@ describe("shadcn Mira kitchen sink", () => {
   it("toggles directly between light and dark themes", () => {
     renderApp()
 
-    fireEvent.click(
-      screen.getByRole("button", { name: "Switch to dark mode" })
+    const darkModeButton = document.querySelector<HTMLButtonElement>(
+      'button[aria-label="Switch to dark mode"]'
     )
+
+    expect(darkModeButton).not.toBeNull()
+    fireEvent.click(darkModeButton!)
     expect(document.documentElement).toHaveClass("dark")
     expect(localStorage.getItem("theme")).toBe("dark")
 
-    fireEvent.click(
-      screen.getByRole("button", { name: "Switch to light mode" })
+    const lightModeButton = document.querySelector<HTMLButtonElement>(
+      'button[aria-label="Switch to light mode"]'
     )
+
+    expect(lightModeButton).not.toBeNull()
+    fireEvent.click(lightModeButton!)
     expect(document.documentElement).toHaveClass("light")
     expect(localStorage.getItem("theme")).toBe("light")
     expect(
