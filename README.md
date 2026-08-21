@@ -1,6 +1,6 @@
 # SLDS Mira Design System
 
-A React 19 + Vite design-system workspace built from shadcn's Base UI-backed Mira preset. The app contains the shadcn Create kitchen sink and `dashboard-01`; the same source files are published through a shadcn registry.
+A React 19 + Vite design-system workspace built from shadcn's Base UI-backed Mira preset. The app contains the shadcn Create kitchen sink, `dashboard-01`, and an `app-no-sidebar` starter; the same source files are published through a shadcn registry.
 
 Hosted registry: `https://samlinville.github.io/slds/r`
 
@@ -25,7 +25,7 @@ pnpm install
 pnpm dev
 ```
 
-The kitchen sink is available at `/` and the dashboard at `/dashboard`. The header toggle switches directly between light and dark mode; the underlying theme provider still supports the system preference.
+The kitchen sink is available at `/`, the dashboard at `/dashboard`, and the no-sidebar app starter at `/app-no-sidebar`. The header toggle switches directly between light and dark mode; the underlying theme provider still supports the system preference.
 
 ## Registry architecture
 
@@ -34,7 +34,7 @@ The demo and registry share one canonical implementation:
 - `src/components/ui` contains the individually installable Base UI primitives.
 - `src/styles/flexoki.css` and `src/index.css` are the editable source theme.
 - `flexoki-theme` distributes the Flexoki palette and semantic light/dark tokens.
-- `src/blocks/dashboard-01` and `src/blocks/kitchen-sink` are the canonical source for the complete multi-file demo blocks.
+- `src/blocks` contains canonical source for installable layouts and demos: `app-no-sidebar`, `dashboard-01`, and `kitchen-sink`.
 - `src/components` contains shared support such as theme handling.
 - `src/demo` is the local showcase application that exercises the published blocks.
 - `design-system` installs the Base UI/Mira configuration, theme, theme handling, and every primitive.
@@ -79,6 +79,7 @@ pnpm dlx shadcn@latest add http://localhost:5173/r/flexoki-theme.json
 pnpm dlx shadcn@latest add http://localhost:5173/r/button.json
 pnpm dlx shadcn@latest add http://localhost:5173/r/dashboard-01.json
 pnpm dlx shadcn@latest add http://localhost:5173/r/kitchen-sink.json
+pnpm dlx shadcn@latest add http://localhost:5173/r/app-no-sidebar.json
 ```
 
 ## Publish and use a namespace

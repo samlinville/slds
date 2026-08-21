@@ -64,6 +64,20 @@ describe("shadcn Mira kitchen sink", () => {
     )
   })
 
+  it("renders app-no-sidebar in a centered 3xl container", () => {
+    window.history.replaceState(null, "", "/app-no-sidebar")
+    renderApp()
+
+    expect(
+      screen.getByRole("heading", { name: "Starter application" })
+    ).toBeInTheDocument()
+    expect(screen.getByRole("main")).toHaveClass(
+      "mx-auto",
+      "w-full",
+      "max-w-3xl"
+    )
+  })
+
   it("toggles directly between light and dark themes", () => {
     renderApp()
 

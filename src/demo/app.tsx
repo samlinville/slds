@@ -1,7 +1,15 @@
 import { ModeToggle } from "@/components/mode-toggle"
+import { AppNoSidebar } from "@/blocks/app-no-sidebar"
 import { DashboardPage } from "@/blocks/dashboard-01"
 import Preview02Example from "@/blocks/kitchen-sink"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
 
@@ -25,6 +33,12 @@ function KitchenSinkPage() {
             >
               Dashboard
             </a>
+            <a
+              className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+              href={`${import.meta.env.BASE_URL}app-no-sidebar`}
+            >
+              App Starter
+            </a>
             <ModeToggle />
           </div>
         </div>
@@ -36,16 +50,62 @@ function KitchenSinkPage() {
   )
 }
 
+function AppNoSidebarPage() {
+  return (
+    <AppNoSidebar
+      actions={<ModeToggle />}
+      appEmoji="✦"
+      appTitle="Starter application"
+    >
+      <div className="grid gap-6 py-6 sm:py-10">
+        <div className="grid gap-2">
+          <p className="text-sm font-medium text-primary">Get started</p>
+          <h2 className="font-heading text-2xl font-semibold tracking-tight">
+            Build your project from a focused canvas.
+          </h2>
+          <p className="max-w-2xl text-sm leading-6 text-muted-foreground">
+            Replace this content with your application. The header and content
+            remain centered in a 3xl container while the page stays free of
+            sidebar assumptions.
+          </p>
+        </div>
+        <Card className="max-w-xl">
+          <CardHeader>
+            <CardTitle>Ready for your content</CardTitle>
+            <CardDescription>
+              Use the main area for settings, onboarding, forms, or an
+              authenticated product surface.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button>Primary action</Button>
+          </CardContent>
+        </Card>
+      </div>
+    </AppNoSidebar>
+  )
+}
+
 export function App() {
   const dashboardPath = `${import.meta.env.BASE_URL}dashboard`
+  const appNoSidebarPath = `${import.meta.env.BASE_URL}app-no-sidebar`
   const isDashboard =
     window.location.pathname.replace(/\/$/, "") ===
     dashboardPath.replace(/\/$/, "")
+  const isAppNoSidebar =
+    window.location.pathname.replace(/\/$/, "") ===
+    appNoSidebarPath.replace(/\/$/, "")
 
   return (
     <TooltipProvider>
       <div className="style-mira isolate min-h-svh bg-background text-foreground">
-        {isDashboard ? <DashboardPage /> : <KitchenSinkPage />}
+        {isDashboard ? (
+          <DashboardPage />
+        ) : isAppNoSidebar ? (
+          <AppNoSidebarPage />
+        ) : (
+          <KitchenSinkPage />
+        )}
       </div>
     </TooltipProvider>
   )

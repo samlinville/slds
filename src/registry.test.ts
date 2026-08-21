@@ -58,7 +58,7 @@ describe("shadcn registry", () => {
     expect(publishedPrimitives).toEqual(expectedPrimitives)
   })
 
-  it("exposes the theme, complete base, and both demo blocks", () => {
+  it("exposes the theme, complete base, and starter blocks", () => {
     const registry = readRegistry()
     const itemByName = new Map(registry.items.map((item) => [item.name, item]))
 
@@ -66,6 +66,10 @@ describe("shadcn registry", () => {
     expect(itemByName.get("flexoki-theme")?.type).toBe("registry:theme")
     expect(itemByName.get("dashboard-01")?.type).toBe("registry:block")
     expect(itemByName.get("kitchen-sink")?.type).toBe("registry:block")
+    expect(itemByName.get("app-no-sidebar")).toMatchObject({
+      type: "registry:block",
+      title: "App Without Sidebar",
+    })
     expect(itemByName.get("design-system")).toMatchObject({
       type: "registry:base",
       config: {
@@ -85,7 +89,11 @@ describe("shadcn registry", () => {
   it("keeps each block's published source in its named block directory", () => {
     const registry = readRegistry()
 
-    for (const blockName of ["dashboard-01", "kitchen-sink"]) {
+    for (const blockName of [
+      "dashboard-01",
+      "kitchen-sink",
+      "app-no-sidebar",
+    ]) {
       const block = registry.items.find((item) => item.name === blockName)
 
       expect(block?.files).toEqual(

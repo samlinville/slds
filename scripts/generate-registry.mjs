@@ -187,6 +187,11 @@ const dashboardCode = (
   await Promise.all(dashboardFiles.map((pathname) => source(pathname)))
 ).join("\n")
 
+const appNoSidebarFiles = ["src/blocks/app-no-sidebar/index.tsx"]
+const appNoSidebarCode = (
+  await Promise.all(appNoSidebarFiles.map((pathname) => source(pathname)))
+).join("\n")
+
 const supportingItems = []
 for (const [name, pathname, type] of [
   ["utils", "src/lib/utils.ts", "registry:lib"],
@@ -248,6 +253,22 @@ const registry = {
           "@components/blocks/dashboard-01/data.json"
         ),
       ],
+    },
+    {
+      name: "app-no-sidebar",
+      type: "registry:block",
+      title: "App Without Sidebar",
+      description:
+        "A centered max-w-3xl application layout with optional header and actions.",
+      dependencies: npmDependencies(appNoSidebarCode),
+      registryDependencies: registryDependencies(appNoSidebarCode),
+      files: appNoSidebarFiles.map((pathname) =>
+        file(
+          pathname,
+          "registry:component",
+          pathname.replace(/^src\/blocks\//, "@components/blocks/")
+        )
+      ),
     },
     {
       name: "kitchen-sink",

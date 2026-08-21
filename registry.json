@@ -1184,6 +1184,23 @@
       ]
     },
     {
+      "name": "app-no-sidebar",
+      "type": "registry:block",
+      "title": "App Without Sidebar",
+      "description": "A centered max-w-3xl application layout with optional header and actions.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://samlinville.github.io/slds/r/utils.json"
+      ],
+      "files": [
+        {
+          "path": "src/blocks/app-no-sidebar/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/app-no-sidebar/index.tsx"
+        }
+      ]
+    },
+    {
       "name": "kitchen-sink",
       "type": "registry:block",
       "title": "Mira Component Kitchen Sink",
