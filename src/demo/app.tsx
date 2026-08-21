@@ -52,14 +52,9 @@ function KitchenSinkPage() {
 
 function AppNoSidebarPage() {
   return (
-    <AppNoSidebar
-      actions={<ModeToggle />}
-      appEmoji="✦"
-      appTitle="Starter application"
-    >
+    <AppNoSidebar actions={<ModeToggle />} appEmoji="🖼️" appTitle="mems">
       <div className="grid gap-6 py-6 sm:py-10">
         <div className="grid gap-2">
-          <p className="text-sm font-medium text-primary">Get started</p>
           <h2 className="font-heading text-2xl font-semibold tracking-tight">
             Build your project from a focused canvas.
           </h2>

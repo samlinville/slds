@@ -68,9 +68,8 @@ describe("shadcn Mira kitchen sink", () => {
     window.history.replaceState(null, "", "/app-no-sidebar")
     renderApp()
 
-    expect(
-      screen.getByRole("heading", { name: "Starter application" })
-    ).toBeInTheDocument()
+    expect(screen.getByRole("heading", { name: "mems" })).toBeInTheDocument()
+    expect(screen.queryByText("Get started")).not.toBeInTheDocument()
     expect(screen.getByRole("main")).toHaveClass(
       "mx-auto",
       "w-full",
