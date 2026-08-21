@@ -1122,69 +1122,64 @@
       ],
       "files": [
         {
-          "path": "src/components/dashboard-page.tsx",
+          "path": "src/blocks/dashboard-01/index.tsx",
           "type": "registry:component",
-          "target": "@components/dashboard-page.tsx"
+          "target": "@components/blocks/dashboard-01/index.tsx"
         },
         {
-          "path": "src/components/app-sidebar.tsx",
+          "path": "src/blocks/dashboard-01/schema.ts",
           "type": "registry:component",
-          "target": "@components/app-sidebar.tsx"
+          "target": "@components/blocks/dashboard-01/schema.ts"
         },
         {
-          "path": "src/components/chart-area-interactive.tsx",
+          "path": "src/blocks/dashboard-01/components/app-sidebar.tsx",
           "type": "registry:component",
-          "target": "@components/chart-area-interactive.tsx"
+          "target": "@components/blocks/dashboard-01/components/app-sidebar.tsx"
         },
         {
-          "path": "src/components/dashboard-schema.ts",
+          "path": "src/blocks/dashboard-01/components/chart-area-interactive.tsx",
           "type": "registry:component",
-          "target": "@components/dashboard-schema.ts"
+          "target": "@components/blocks/dashboard-01/components/chart-area-interactive.tsx"
         },
         {
-          "path": "src/components/data-table.tsx",
+          "path": "src/blocks/dashboard-01/components/data-table.tsx",
           "type": "registry:component",
-          "target": "@components/data-table.tsx"
+          "target": "@components/blocks/dashboard-01/components/data-table.tsx"
         },
         {
-          "path": "src/components/icon-placeholder.tsx",
+          "path": "src/blocks/dashboard-01/components/nav-documents.tsx",
           "type": "registry:component",
-          "target": "@components/icon-placeholder.tsx"
+          "target": "@components/blocks/dashboard-01/components/nav-documents.tsx"
         },
         {
-          "path": "src/components/nav-documents.tsx",
+          "path": "src/blocks/dashboard-01/components/nav-main.tsx",
           "type": "registry:component",
-          "target": "@components/nav-documents.tsx"
+          "target": "@components/blocks/dashboard-01/components/nav-main.tsx"
         },
         {
-          "path": "src/components/nav-main.tsx",
+          "path": "src/blocks/dashboard-01/components/nav-secondary.tsx",
           "type": "registry:component",
-          "target": "@components/nav-main.tsx"
+          "target": "@components/blocks/dashboard-01/components/nav-secondary.tsx"
         },
         {
-          "path": "src/components/nav-secondary.tsx",
+          "path": "src/blocks/dashboard-01/components/nav-user.tsx",
           "type": "registry:component",
-          "target": "@components/nav-secondary.tsx"
+          "target": "@components/blocks/dashboard-01/components/nav-user.tsx"
         },
         {
-          "path": "src/components/nav-user.tsx",
+          "path": "src/blocks/dashboard-01/components/section-cards.tsx",
           "type": "registry:component",
-          "target": "@components/nav-user.tsx"
+          "target": "@components/blocks/dashboard-01/components/section-cards.tsx"
         },
         {
-          "path": "src/components/section-cards.tsx",
+          "path": "src/blocks/dashboard-01/components/site-header.tsx",
           "type": "registry:component",
-          "target": "@components/section-cards.tsx"
+          "target": "@components/blocks/dashboard-01/components/site-header.tsx"
         },
         {
-          "path": "src/components/site-header.tsx",
-          "type": "registry:component",
-          "target": "@components/site-header.tsx"
-        },
-        {
-          "path": "src/app/dashboard/data.json",
+          "path": "src/blocks/dashboard-01/data.json",
           "type": "registry:file",
-          "target": "src/app/dashboard/data.json"
+          "target": "@components/blocks/dashboard-01/data.json"
         }
       ]
     },
@@ -1241,354 +1236,354 @@
       ],
       "files": [
         {
-          "path": "src/components/kitchen-sink/additional-card-stacks.tsx",
+          "path": "src/blocks/kitchen-sink/additional-card-stacks.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/additional-card-stacks.tsx"
+          "target": "@components/blocks/kitchen-sink/additional-card-stacks.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/account-access.tsx",
+          "path": "src/blocks/kitchen-sink/cards/account-access.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/account-access.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/account-access.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/album-card.tsx",
+          "path": "src/blocks/kitchen-sink/cards/album-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/album-card.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/album-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/card-overview.tsx",
+          "path": "src/blocks/kitchen-sink/cards/card-overview.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/card-overview.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/card-overview.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/catalog-toolbar.tsx",
+          "path": "src/blocks/kitchen-sink/cards/catalog-toolbar.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/catalog-toolbar.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/catalog-toolbar.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/claimable-balance.tsx",
+          "path": "src/blocks/kitchen-sink/cards/claimable-balance.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/claimable-balance.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/claimable-balance.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/contribution-history.tsx",
+          "path": "src/blocks/kitchen-sink/cards/contribution-history.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/contribution-history.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/contribution-history.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/cover-art.tsx",
+          "path": "src/blocks/kitchen-sink/cards/cover-art.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/cover-art.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/cover-art.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/dividend-income.tsx",
+          "path": "src/blocks/kitchen-sink/cards/dividend-income.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/dividend-income.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/dividend-income.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/empty-connect-bank.tsx",
+          "path": "src/blocks/kitchen-sink/cards/empty-connect-bank.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/empty-connect-bank.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/empty-connect-bank.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/empty-distribute-track.tsx",
+          "path": "src/blocks/kitchen-sink/cards/empty-distribute-track.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/empty-distribute-track.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/empty-distribute-track.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/empty-explore-catalog.tsx",
+          "path": "src/blocks/kitchen-sink/cards/empty-explore-catalog.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/empty-explore-catalog.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/empty-explore-catalog.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/faq.tsx",
+          "path": "src/blocks/kitchen-sink/cards/faq.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/faq.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/faq.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/front-door.tsx",
+          "path": "src/blocks/kitchen-sink/cards/front-door.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/front-door.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/front-door.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/index-investing.tsx",
+          "path": "src/blocks/kitchen-sink/cards/index-investing.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/index-investing.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/index-investing.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/kitchen-island.tsx",
+          "path": "src/blocks/kitchen-sink/cards/kitchen-island.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/kitchen-island.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/kitchen-island.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/loading-card.tsx",
+          "path": "src/blocks/kitchen-sink/cards/loading-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/loading-card.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/loading-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/new-milestone.tsx",
+          "path": "src/blocks/kitchen-sink/cards/new-milestone.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/new-milestone.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/new-milestone.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/notification-settings.tsx",
+          "path": "src/blocks/kitchen-sink/cards/notification-settings.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/notification-settings.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/notification-settings.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/payments.tsx",
+          "path": "src/blocks/kitchen-sink/cards/payments.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/payments.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/payments.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/payout-threshold.tsx",
+          "path": "src/blocks/kitchen-sink/cards/payout-threshold.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/payout-threshold.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/payout-threshold.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/power-usage.tsx",
+          "path": "src/blocks/kitchen-sink/cards/power-usage.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/power-usage.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/power-usage.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/preferences.tsx",
+          "path": "src/blocks/kitchen-sink/cards/preferences.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/preferences.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/preferences.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/qr-connect.tsx",
+          "path": "src/blocks/kitchen-sink/cards/qr-connect.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/qr-connect.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/qr-connect.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/receiving-method.tsx",
+          "path": "src/blocks/kitchen-sink/cards/receiving-method.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/receiving-method.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/receiving-method.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/recent-transactions.tsx",
+          "path": "src/blocks/kitchen-sink/cards/recent-transactions.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/recent-transactions.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/recent-transactions.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/release-catalog.tsx",
+          "path": "src/blocks/kitchen-sink/cards/release-catalog.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/release-catalog.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/release-catalog.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/roller-shades.tsx",
+          "path": "src/blocks/kitchen-sink/cards/roller-shades.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/roller-shades.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/roller-shades.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/savings-progress.tsx",
+          "path": "src/blocks/kitchen-sink/cards/savings-progress.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/savings-progress.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/savings-progress.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/savings-targets.tsx",
+          "path": "src/blocks/kitchen-sink/cards/savings-targets.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/savings-targets.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/savings-targets.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/sidebar-nav.tsx",
+          "path": "src/blocks/kitchen-sink/cards/sidebar-nav.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/sidebar-nav.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/sidebar-nav.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/social-links.tsx",
+          "path": "src/blocks/kitchen-sink/cards/social-links.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/social-links.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/social-links.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/stock-performance.tsx",
+          "path": "src/blocks/kitchen-sink/cards/stock-performance.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/stock-performance.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/stock-performance.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/syncing-state.tsx",
+          "path": "src/blocks/kitchen-sink/cards/syncing-state.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/syncing-state.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/syncing-state.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/transfer-funds.tsx",
+          "path": "src/blocks/kitchen-sink/cards/transfer-funds.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/transfer-funds.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/transfer-funds.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/cards/upcoming-payments.tsx",
+          "path": "src/blocks/kitchen-sink/cards/upcoming-payments.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/cards/upcoming-payments.tsx"
+          "target": "@components/blocks/kitchen-sink/cards/upcoming-payments.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/index.tsx",
+          "path": "src/blocks/kitchen-sink/components/demo-icon.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/index.tsx"
+          "target": "@components/blocks/kitchen-sink/components/demo-icon.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/activate-agent-dialog.tsx",
+          "path": "src/blocks/kitchen-sink/components/icon-placeholder.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/activate-agent-dialog.tsx"
+          "target": "@components/blocks/kitchen-sink/components/icon-placeholder.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/analytics-card.tsx",
+          "path": "src/blocks/kitchen-sink/index.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/analytics-card.tsx"
+          "target": "@components/blocks/kitchen-sink/index.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/anomaly-alert.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/activate-agent-dialog.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/anomaly-alert.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/activate-agent-dialog.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/bar-chart-card.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/analytics-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/bar-chart-card.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/analytics-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/book-appointment.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/anomaly-alert.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/book-appointment.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/anomaly-alert.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/codespaces-card.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/bar-chart-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/codespaces-card.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/bar-chart-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/contributions-activity.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/book-appointment.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/contributions-activity.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/book-appointment.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/contributors.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/codespaces-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/contributors.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/codespaces-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/environment-variables.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/contributions-activity.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/environment-variables.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/contributions-activity.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/feedback-form.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/contributors.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/feedback-form.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/contributors.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/file-upload.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/environment-variables.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/file-upload.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/environment-variables.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/github-profile.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/feedback-form.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/github-profile.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/feedback-form.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/icon-preview-grid.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/file-upload.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/icon-preview-grid.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/file-upload.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/invite-team.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/github-profile.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/invite-team.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/github-profile.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/invoice.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/icon-preview-grid.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/invoice.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/icon-preview-grid.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/live-waveform.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/invite-team.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/live-waveform.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/invite-team.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/no-team-members.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/invoice.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/no-team-members.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/invoice.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/not-found.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/live-waveform.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/not-found.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/live-waveform.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/observability-card.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/no-team-members.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/observability-card.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/no-team-members.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/pie-chart-card.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/not-found.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/pie-chart-card.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/not-found.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/report-bug.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/observability-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/report-bug.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/observability-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/shipping-address.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/pie-chart-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/shipping-address.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/pie-chart-card.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/shortcuts.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/report-bug.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/shortcuts.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/report-bug.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/skeleton-loading.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/shipping-address.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/skeleton-loading.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/shipping-address.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/sleep-report.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/shortcuts.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/sleep-report.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/shortcuts.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/style-overview.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/skeleton-loading.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/style-overview.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/skeleton-loading.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/typography-specimen.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/sleep-report.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/typography-specimen.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/sleep-report.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/ui-elements.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/style-overview.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/ui-elements.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/style-overview.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/usage-card.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/typography-specimen.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/usage-card.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/typography-specimen.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/visitors.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/ui-elements.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/visitors.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/ui-elements.tsx"
         },
         {
-          "path": "src/components/kitchen-sink/preview-cards/weekly-fitness-summary.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/usage-card.tsx",
           "type": "registry:component",
-          "target": "@components/kitchen-sink/preview-cards/weekly-fitness-summary.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/usage-card.tsx"
         },
         {
-          "path": "src/components/demo-icon.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/visitors.tsx",
           "type": "registry:component",
-          "target": "@components/demo-icon.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/visitors.tsx"
         },
         {
-          "path": "src/components/icon-placeholder.tsx",
+          "path": "src/blocks/kitchen-sink/preview-cards/weekly-fitness-summary.tsx",
           "type": "registry:component",
-          "target": "@components/icon-placeholder.tsx"
+          "target": "@components/blocks/kitchen-sink/preview-cards/weekly-fitness-summary.tsx"
         }
       ]
     },

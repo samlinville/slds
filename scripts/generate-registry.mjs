@@ -5,7 +5,9 @@ const root = process.cwd()
 const registryBaseUrl = (
   process.env.REGISTRY_URL ?? "http://localhost:5173/r"
 ).replace(/\/$/, "")
-const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "utf8"))
+const packageJson = JSON.parse(
+  await readFile(path.join(root, "package.json"), "utf8")
+)
 const dependencyVersions = {
   ...(packageJson.dependencies ?? {}),
   ...(packageJson.devDependencies ?? {}),
@@ -107,9 +109,7 @@ function cssDeclarations(block) {
 function themeVariables(code) {
   const values = {}
 
-  for (const match of code.matchAll(
-    /@theme(?:\s+inline)?\s*\{([\s\S]*?)\}/g
-  )) {
+  for (const match of code.matchAll(/@theme(?:\s+inline)?\s*\{([\s\S]*?)\}/g)) {
     Object.assign(values, cssDeclarations(match[1]))
   }
 
@@ -164,27 +164,24 @@ const uiItems = await Promise.all(
 )
 
 const kitchenFiles = [
-  ...(await filesRecursively("src/components/kitchen-sink")),
-  "src/components/demo-icon.tsx",
-  "src/components/icon-placeholder.tsx",
+  ...(await filesRecursively("src/blocks/kitchen-sink")),
 ].filter((pathname) => pathname.endsWith(".tsx"))
 const kitchenCode = (
   await Promise.all(kitchenFiles.map((pathname) => source(pathname)))
 ).join("\n")
 
 const dashboardFiles = [
-  "src/components/dashboard-page.tsx",
-  "src/components/app-sidebar.tsx",
-  "src/components/chart-area-interactive.tsx",
-  "src/components/dashboard-schema.ts",
-  "src/components/data-table.tsx",
-  "src/components/icon-placeholder.tsx",
-  "src/components/nav-documents.tsx",
-  "src/components/nav-main.tsx",
-  "src/components/nav-secondary.tsx",
-  "src/components/nav-user.tsx",
-  "src/components/section-cards.tsx",
-  "src/components/site-header.tsx",
+  "src/blocks/dashboard-01/index.tsx",
+  "src/blocks/dashboard-01/schema.ts",
+  "src/blocks/dashboard-01/components/app-sidebar.tsx",
+  "src/blocks/dashboard-01/components/chart-area-interactive.tsx",
+  "src/blocks/dashboard-01/components/data-table.tsx",
+  "src/blocks/dashboard-01/components/nav-documents.tsx",
+  "src/blocks/dashboard-01/components/nav-main.tsx",
+  "src/blocks/dashboard-01/components/nav-secondary.tsx",
+  "src/blocks/dashboard-01/components/nav-user.tsx",
+  "src/blocks/dashboard-01/components/section-cards.tsx",
+  "src/blocks/dashboard-01/components/site-header.tsx",
 ]
 const dashboardCode = (
   await Promise.all(dashboardFiles.map((pathname) => source(pathname)))
@@ -233,7 +230,8 @@ const registry = {
       name: "dashboard-01",
       type: "registry:block",
       title: "Dashboard 01",
-      description: "The Base UI/Mira dashboard with sidebar, charts, and data table.",
+      description:
+        "The Base UI/Mira dashboard with sidebar, charts, and data table.",
       dependencies: npmDependencies(dashboardCode),
       registryDependencies: registryDependencies(dashboardCode),
       files: [
@@ -241,13 +239,13 @@ const registry = {
           file(
             pathname,
             "registry:component",
-            pathname.replace(/^src\/components\//, "@components/")
+            pathname.replace(/^src\/blocks\//, "@components/blocks/")
           )
         ),
         file(
-          "src/app/dashboard/data.json",
+          "src/blocks/dashboard-01/data.json",
           "registry:file",
-          "src/app/dashboard/data.json"
+          "@components/blocks/dashboard-01/data.json"
         ),
       ],
     },
@@ -263,7 +261,7 @@ const registry = {
         file(
           pathname,
           "registry:component",
-          pathname.replace(/^src\/components\//, "@components/")
+          pathname.replace(/^src\/blocks\//, "@components/blocks/")
         )
       ),
     },

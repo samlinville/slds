@@ -34,7 +34,9 @@ The demo and registry share one canonical implementation:
 - `src/components/ui` contains the individually installable Base UI primitives.
 - `src/styles/flexoki.css` and `src/index.css` are the editable source theme.
 - `flexoki-theme` distributes the Flexoki palette and semantic light/dark tokens.
-- `dashboard-01` and `kitchen-sink` distribute the complete multi-file demos.
+- `src/blocks/dashboard-01` and `src/blocks/kitchen-sink` are the canonical source for the complete multi-file demo blocks.
+- `src/components` contains shared support such as theme handling.
+- `src/demo` is the local showcase application that exercises the published blocks.
 - `design-system` installs the Base UI/Mira configuration, theme, theme handling, and every primitive.
 - `scripts/generate-registry.mjs` generates `registry.json` directly from the canonical source.
 - `public/r` contains the static JSON payloads produced by the shadcn CLI.
@@ -104,7 +106,7 @@ For a repository-hosted registry, `REGISTRY_URL` can instead point at the raw `p
 3. Run `pnpm registry:build`.
 4. Run the verification suite below.
 
-New files in `src/components/ui` are discovered automatically. The dashboard and kitchen-sink block file lists are maintained in `scripts/generate-registry.mjs` because their explicit install targets are part of the public API.
+New files in `src/components/ui` are discovered automatically. Block source is grouped under `src/blocks/<block-name>`; the dashboard's explicit file list and the kitchen sink's recursive file discovery are maintained in `scripts/generate-registry.mjs` because their install targets are part of the public API.
 
 ## Customize the theme
 

@@ -77,9 +77,30 @@ describe("shadcn registry", () => {
         },
       },
     })
-    expect(
-      itemByName.get("design-system")?.registryDependencies
-    ).toContain(`${registry.homepage}/flexoki-theme.json`)
+    expect(itemByName.get("design-system")?.registryDependencies).toContain(
+      `${registry.homepage}/flexoki-theme.json`
+    )
+  })
+
+  it("keeps each block's published source in its named block directory", () => {
+    const registry = readRegistry()
+
+    for (const blockName of ["dashboard-01", "kitchen-sink"]) {
+      const block = registry.items.find((item) => item.name === blockName)
+
+      expect(block?.files).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            path: expect.stringMatching(`^src/blocks/${blockName}/`),
+          }),
+        ])
+      )
+      expect(
+        block?.files?.every((file) =>
+          file.path.startsWith(`src/blocks/${blockName}/`)
+        )
+      ).toBe(true)
+    }
   })
 
   it("resolves internal dependencies back to this registry", () => {
@@ -96,7 +117,9 @@ describe("shadcn registry", () => {
 
   it("pins external packages to the versions used by the source app", () => {
     const registry = readRegistry()
-    const dashboard = registry.items.find((item) => item.name === "dashboard-01")
+    const dashboard = registry.items.find(
+      (item) => item.name === "dashboard-01"
+    )
     const button = registry.items.find((item) => item.name === "button")
 
     expect(dashboard?.dependencies).toContain("recharts@3.8.0")
@@ -129,9 +152,10 @@ describe("shadcn registry", () => {
 
     for (const item of registry.items) {
       for (const file of item.files ?? []) {
-        expect(existsSync(resolve(file.path)), `${item.name}: ${file.path}`).toBe(
-          true
-        )
+        expect(
+          existsSync(resolve(file.path)),
+          `${item.name}: ${file.path}`
+        ).toBe(true)
       }
     }
   })
